@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700&display=swap');
+@import './default-kaya.less';
+
+body {
+    margin: 0;
+    font-family: 'Overpass', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+        'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #F5F6F7;
+
+    div[role="dialog"], div[x-placement="top"], #transition-popper {
+        z-index: 9999  !important;
+    }
+
+    // these styled will affect the zoom message box
+    .zmwebsdk-makeStyles-title-129 {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 16px;
+    }
+
+    .zmwebsdk-MuiTypography-h1 {
+        color: #eceef0;
+        margin: 0;
+    }
+
+    .zmwebsdk-makeStyles-content-130 {
+        margin: 16px 0;
+    }
+
+    .zmwebsdk-makeStyles-root-128 {
+        width: 371px;
+    }
+
+    .zmwebsdk-makeStyles-buttonGroup-131 {
+        margin-bottom: 12px;
+        margin-right: 0;
+    }
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background: #D3D5DB;
+    -webkit-transition: color 0.2s ease;
+    transition: color 0.2s ease;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 0;
+}
+
+.link-btn {
+    background: none !important;
+    border: none;
+    padding: 0 !important;
+    font-family: arial, sans-serif;
+    color: #069;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+// Avatars
+.ant-avatar-image {
+    img {
+        object-fit: contain !important;
+    }
+}
+
+.ant-message {
+    display: none !important; //TODO: remove after demo
+}
+
+

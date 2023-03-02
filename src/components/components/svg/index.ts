@@ -1,0 +1,1 @@
+export { SVGLoader } from './SVGLoader';

@@ -1,0 +1,69 @@
+@import '~antd/dist/antd.less';
+@import './color.less';
+
+// -------- Borders -----------
+@common-border: 1px solid @gray-300;
+@common-border-radius: 4px;
+
+// -------- Box Shadows -----------
+@common-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+
+// ------ Others -------
+@outline-fade: 0.1;
+
+// >>> Primary
+@primary-color: @gray-600;
+@primary-color-hover: @gray-700;
+@primary-color-active: @gray-600;
+@primary-color-outline: @gray-300;
+
+@processing-color: @gray-500;
+
+// >>> Info
+@info-color: @primary-color;
+@info-color-deprecated-bg: @gray-100;
+@info-color-deprecated-border: @gray-300;
+
+// >>> Success
+@success-color: @success-600;
+@success-color-hover: @success-500;
+@success-color-active: @success-700;
+@success-color-outline: fade(@success-color, @outline-fade);
+@success-color-deprecated-bg: @success-100;
+@success-color-deprecated-border: @success-300;
+
+// >>> Warning
+@warning-color: @warning-600;
+@warning-color-hover: @warning-500;
+@warning-color-active: @warning-700;
+@warning-color-outline: fade(@warning-color, @outline-fade);
+@warning-color-deprecated-bg: @warning-100;
+@warning-color-deprecated-border: @warning-300;
+
+// >>> Error
+@error-color: @error-600;
+@error-color-hover: @error-500;
+@error-color-active: @error-700;
+@error-color-outline: fade(@error-color, @outline-fade);
+@error-color-deprecated-bg: @error-100;
+@error-color-deprecated-border: @error-300;
+
+@highlight-color: @error-700;
+@normal-color: @gray-400;
+@white: @base-color-white;
+@black: @base-color-black;
+
+// Color used by default to control hover and active backgrounds and for
+// alert info backgrounds.
+@primary-1: @gray-100;
+@primary-2: @gray-200;
+@primary-3: @gray-300;
+@primary-4: @gray-400;
+@primary-5: @gray-500;
+@primary-6: @gray-600;
+@primary-7: @gray-700;
+@primary-8: @gray-800;
+@primary-9: @gray-900;
+@primary-10: @gray-900;
+
+@import './common-attributes.less';
