@@ -1,5 +1,4 @@
-import { SearchOutlined } from '@ant-design/icons';
-import { Button, Divider, Select, Tooltip } from 'antd';
+import { Button, Divider } from 'antd';
 import React, { useState } from 'react';
 import {
   ApplyNowSection,

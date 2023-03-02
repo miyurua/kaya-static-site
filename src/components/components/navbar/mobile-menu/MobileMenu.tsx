@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Collapse, Drawer } from 'antd';
+import { Button, Drawer } from 'antd';
 
 import {
   MobileMenuIconWrapper,
