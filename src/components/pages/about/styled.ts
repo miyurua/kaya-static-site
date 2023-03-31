@@ -1022,3 +1022,11 @@ export const SectionWrapper = styled.div`
         text-align: left;
     }
 `;
+export const SubPageWrapper = styled.div`
+    max-width: 1000px;
+    margin: 40px auto;
+
+    .center-align {
+        text-align: center;
+    }
+`;

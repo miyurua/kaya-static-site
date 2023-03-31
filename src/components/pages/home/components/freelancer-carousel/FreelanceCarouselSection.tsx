@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Carousel, Divider } from 'antd';
+import React, { useState, useEffect } from "react";
+import { Carousel, Divider } from "antd";
 
 import {
   CarouselDividerWrapper,
@@ -10,11 +10,12 @@ import {
   FreelancerListSection,
   FreelancerNameTitleWrapper,
   FreelancerSliderCard,
+  KayaPageContnent,
   MeetKayans,
   MeetKayansTopMobileBorderGrid,
-} from './styled';
-import { IFreelancerSliderdata } from './types';
-import { SVGLoader } from '../../../../components/svg';
+} from "./styled";
+import { IFreelancerSliderdata, Itext } from "./types";
+import { SVGLoader } from "../../../../components/svg";
 import {
   KAYA_CDN_HOME_PAGE_CONTENT_URL,
   KAYA_CDN_SVG_URL,
@@ -22,51 +23,53 @@ import {
   REVAMP_HOME_PAGE_FREELANCER_MEET_KAYANS,
   REVAMP_HOME_PAGE_FREELANCER_MEET_KAYANS_DESC,
   REVAMP_HOME_PAGE_FREELANCER_MEET_KAYANS_DESC_SPAN,
-} from '../../../../../constant/AppConstant';
-import { Heading } from '../../../../components/typography';
-import MessageModal from '../../../../components/message-modal/MessageModal';
+  REVAMP_NEW_CONTENT_HOME_PAGE_PARAGRAPGH_ONE,
+} from "../../../../../constant/AppConstant";
+import { Heading } from "../../../../components/typography";
+import MessageModal from "../../../../components/message-modal/MessageModal";
 
-const FreelanceCarouselSection: React.FC = () => {
+const FreelanceCarouselSection: React.FC<Itext> = ({ text: paragraphText }) => {
   const [freelancerList, setFreelancerList] = useState<IFreelancerSliderdata[]>(
     []
   );
 
   const [open, setOpen] = useState<boolean>(false);
+  const [text, setText] = useState<string>("");
 
   const handleClick = () => {
     setOpen(true);
   };
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch(KAYA_CDN_HOME_PAGE_CONTENT_URL);
-      const freelancerData = await response.json();
-      setFreelancerList(freelancerData.freelancers);
-    };
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const response = await fetch(KAYA_CDN_HOME_PAGE_CONTENT_URL);
+  //     const freelancerData = await response.json();
+  //     setFreelancerList(freelancerData.freelancers);
+  //   };
+  //   fetchData();
+  // }, []);
 
   return (
     <>
       <FreelancerListSection>
         <FreelancerListContent>
           <MeetKayansTopMobileBorderGrid
-            src={KAYA_CDN_SVG_URL + 'meet-kayans-top-border.svg'}
-            alt='top-border'
+            src={KAYA_CDN_SVG_URL + "meet-kayans-top-border.svg"}
+            alt="top-border"
           />
           <MeetKayans>
-            <Heading variation='md' weight='bold'>
-              {REVAMP_HOME_PAGE_FREELANCER_MEET_KAYANS}
+            <Heading variation="md" weight="bold">
+              {/* {REVAMP_HOME_PAGE_FREELANCER_MEET_KAYANS} */}
             </Heading>
             <p>
-              {REVAMP_HOME_PAGE_FREELANCER_MEET_KAYANS_DESC}
-              <span onClick={() => handleClick()}>
+              {/* {paragraphText} */}
+              {/* <span onClick={() => handleClick()}>
                 {REVAMP_HOME_PAGE_FREELANCER_MEET_KAYANS_DESC_SPAN}
-              </span>
+              </span> */}
             </p>
           </MeetKayans>
           <FreelancerCorousalWrapper>
-            <Carousel
+            {/* <Carousel
               swipeToSlide
               draggable
               autoplay
@@ -101,14 +104,19 @@ const FreelanceCarouselSection: React.FC = () => {
                   );
                 }
               )}
-            </Carousel>
+            </Carousel> */}
           </FreelancerCorousalWrapper>
         </FreelancerListContent>
         <CarouselDividerWrapper>
           <Divider />
         </CarouselDividerWrapper>
       </FreelancerListSection>
-      <MessageModal open={open} setOpen={setOpen} />
+      {/* <MessageModal open={open} setOpen={setOpen} /> */}
+
+      <KayaPageContnent>
+        <p>{paragraphText}</p>
+      </KayaPageContnent>
+
     </>
   );
 };

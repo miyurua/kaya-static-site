@@ -5,3 +5,7 @@ export interface IFreelancerSliderdata {
     DESC: string;
     IMG_URL: string;
 }
+
+export interface Itext {
+    text?: string;
+}

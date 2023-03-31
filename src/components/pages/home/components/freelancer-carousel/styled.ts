@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import { KAYA_CDN_SVG_URL } from '../../../../../constant/AppConstant';
 
 export const FreelancerListSection = styled.div`
-  height: 886px;
-  background-image: url(${KAYA_CDN_SVG_URL + 'freelancers-list-bg.svg'});
-  background-repeat: no-repeat;
+  height: 200px;
+  // background-image: url(${KAYA_CDN_SVG_URL + 'freelancers-list-bg.svg'});
+  // background-repeat: no-repeat;
   position: relative;
   right: 25px;
 
@@ -232,3 +232,23 @@ export const CarouselDividerWrapper = styled.div`
     }
   }
 `;
+
+// New Content Styles
+
+export const KayaPageContnent = styled.div`
+position: relative;
+justify-content: center;
+left: 275px;
+
+  p {
+    font-size: ${(props) => props.theme.fonts.size.larger};
+    font-weight: ${(props) => props.theme.fonts.weight.normal};
+    line-height: ${(props) => props.theme.fonts.lineHeight.extraLarge};
+    width: 1000px;
+
+    @media screen and (${(props) => props.theme.breakPoints.sm}) {
+      width: 312px;
+      margin: 0 auto;
+    }
+  }
+`
