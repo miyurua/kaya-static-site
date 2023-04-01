@@ -1,21 +1,22 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
-import About from './about';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './home';
+import About from './about';
 
-const Page: React.FC = () => {
-  return (
-    <div>
-        <Routes>
-            <Route path='/'>
-                <Home />
-            </Route>
-            <Route path='/about'>
-                <About />
-            </Route>
-        </Routes>
-    </div>
-  )
-}
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />,
+  },
+  {
+    path: '/about',
+    element: <About />,
+  },
+]);
 
-export default Page;
+const AppRouter = () => {
+  return <RouterProvider router={router} />;
+};
+
+export default AppRouter;

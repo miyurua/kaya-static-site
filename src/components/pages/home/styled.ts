@@ -80,6 +80,8 @@ export const WelcomeInteractRows = styled.div`
 `;
 
 export const HeroContent = styled.div`
+  display: flex;
+  flex-direction: column;
   @media screen and (${(props) => props.theme.breakPoints.sm}) {
     margin: 50px 0;
   }
@@ -87,7 +89,7 @@ export const HeroContent = styled.div`
   > h1 {
     color: ${(props) => props.theme.gray.gray900};
     width: 650px;
-    margin-bottom: ${(props) => props.theme.margin.small};
+    /* margin-bottom: ${(props) => props.theme.margin.small}; */
 
     @media screen and (${(props) => props.theme.breakPoints.sm}) {
       font-size: 36px !important;
@@ -167,7 +169,6 @@ export const QuoteComponent = styled.div`
   align-items: center;
   justify-content: flex-start;
   width: 500px;
-  margin-top: 80px;
 
   @media screen and (${(props) => props.theme.breakPoints.sm}) {
     width: 312px;
@@ -325,6 +326,7 @@ export const ApplyNowSectionCTASection = styled.div`
 `;
 
 export const ApplyNowSectionContent = styled.div`
+  margin-top: 50px;
   @media screen and (${(props) => props.theme.breakPoints.sm}) {
     background-color: #fff;
     height: 370px;
@@ -454,8 +456,7 @@ export const TalentSectionWrapper = styled.div`
     @media screen and (${(props) => props.theme.breakPoints.sm}) {
       font-size: 36px !important;
       margin-bottom: ${(props) => props.theme.margin.gigantic};
-      line-height: ${(props) =>
-        props.theme.fonts.lineHeight.gigantic} !important;
+      line-height: ${(props) => props.theme.fonts.lineHeight.gigantic} !important;
     }
   }
 
@@ -771,8 +772,7 @@ export const CategoryCardContainer = styled.div`
 export const CategoryCard = styled.div`
   width: 180px;
   height: 180px;
-  border: ${(props) => props.theme.border.small} solid
-    ${(props) => props.theme.colors.default.pale};
+  border: ${(props) => props.theme.border.small} solid ${(props) => props.theme.colors.default.pale};
   border-radius: ${(props) => props.theme.radius.small};
   display: flex;
   justify-content: center;
@@ -796,8 +796,7 @@ export const StartAsContainer = styled(WelcomeContainer)`
 export const StartAsCard = styled.div`
   width: 500px;
   height: 600px;
-  border: ${(props) => props.theme.border.small} solid
-    ${(props) => props.theme.colors.default.pale};
+  border: ${(props) => props.theme.border.small} solid ${(props) => props.theme.colors.default.pale};
   border-radius: ${(props) => props.theme.radius.gigantic};
   display: flex;
   flex-direction: column;
@@ -859,8 +858,7 @@ export const JobListContainer = styled.div`
 export const StatsContainer = styled.div`
   width: 100%;
   margin: ${(props) => props.theme.margin.gigantic} auto;
-  border: ${(props) => props.theme.border.small} solid
-    ${(props) => props.theme.colors.default.pale};
+  border: ${(props) => props.theme.border.small} solid ${(props) => props.theme.colors.default.pale};
   border-radius: ${(props) => props.theme.radius.gigantic};
   width: 100%;
   display: flex;
@@ -1008,17 +1006,22 @@ export const SubmiteEmailInputButton = styled(Button)`
 `;
 
 export const SectionWrapper = styled.div`
-    margin-top: 3rem;
-    .list-container {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0 5rem;
-    }
-    .order-list {
-        margin: 1rem 0 0 2rem;
-    }
-    .justified-text {
-        text-align: left;
-    }
+  width: 1280px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  .list-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 5rem;
+  }
+  .order-list {
+    margin: 1rem 0 0 2rem;
+  }
+  .justified-text {
+    text-align: left;
+  }
+
+  .quote-wrapper {
+  }
 `;

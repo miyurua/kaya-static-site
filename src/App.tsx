@@ -5,17 +5,13 @@ import { Navbar } from './components/components/navbar';
 import Home from './components/pages/home';
 import About from './components/pages/about';
 import DefaultTheme from './theme/DefaultTheme';
+import AppRouter from './components/pages';
 
 function App() {
   return (
     <ThemeProvider theme={DefaultTheme}>
-      <Router>
-        <Navbar />
-        <Home />
-        {/* <About /> */}
-        {/* <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} /> */}
-      </Router>
+      <Navbar />
+      <AppRouter />
     </ThemeProvider>
   );
 }
