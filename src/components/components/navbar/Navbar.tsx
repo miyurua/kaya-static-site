@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
       <Container>
         <HeaderWrapper>
           <SubHeaderWrapper>
-            <Logo preview={false} src={KayaLogo} alt={APP_LOGO_ALT} />
+            <Logo preview={false} src={KayaLogo} alt={APP_LOGO_ALT} onClick={() => navigateTo('/')}/>
             <MobileLogo preview={false} src={KAYA_CDN_SVG_URL + 'kaya-logo-mobile.svg'} alt={APP_LOGO_ALT} />
           </SubHeaderWrapper>
           <ButtonContainer>

@@ -17,8 +17,8 @@ const MobieMenu: React.FC = () => {
   const mobileMenuFooter = () => {
     return (
       <MobileMenuFooter>
-        <Button type='primary'>Sign Up</Button>
-        <Button>Login</Button>
+        <Button type='primary'>Home</Button>
+        <Button>About</Button>
       </MobileMenuFooter>
     );
   };

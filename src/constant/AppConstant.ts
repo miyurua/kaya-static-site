@@ -82,7 +82,7 @@ export const REVAMP_NEW_CONTENT_HOME_PAGE_DESC_SOURCE =
   "Source: McKinsey Global Survey";
 
 export const REVAMP_NEW_CONTENT_HOME_PAGE_PARAGRAPGH_ONE =
-  "In a digitally centric world, corporate performance is increasingly tied to tech performance. Tech performance is tied to a company’s ability to effectively assess and select the best tech talent.And yet most companies don’t. Because they can’t. Until now. ";
+  "In a digitally centric world, corporate performance is increasingly tied to tech performance. Tech performance is tied to a company’s ability to effectively assess and select the best tech talent. And yet most companies don’t. Because they can’t. Until now. ";
 export const REVAMP_NEW_CONTENT_HOME_PAGE_PARAGRAPGH_TWO = "We are KAYA. We have designed a tech talent assessment engine that is changing the performance trajectory of the entire corporate world; that turns any company’s tech talent assessing disadvantage into a strategic, competitive advantage.  ";
 export const REVAMP_NEW_CONTENT_HOME_PAGE_PARAGRAPGH_THREE = "Our advanced, generative AI assessment engine takes all the subjectivity out of the tech talent assessment process, replacing it with data-based, in-depth analyses of the three key dimensions of tech candidates:";
 export const REVAMP_NEW_CONTENT_HOME_PAGE_PARAGRAPH_FOUR = "It’s a fact. Machines are better at predicting fit and calculating the risk. It’s also a fact that humans need to be involved in these critical hire decisions. That’s why we’ve built the latest AI and ML tools into every component of our engine, including a split screen generative-AI-guided online interview, to allow interviewers to do what they do well, and not do what they don’t.";
